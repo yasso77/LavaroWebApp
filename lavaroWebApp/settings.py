@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-gai2^x)0b(ms@2h_4^c9scxsee872-v-_4a6l=#e1-c(=awli#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'WebSite.urls'
+ROOT_URLCONF = 'lavaroWebApp.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'WebSite.wsgi.application'
+WSGI_APPLICATION = 'lavaroWebApp.wsgi.application'
 
 
 # Database

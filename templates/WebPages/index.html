@@ -30,6 +30,8 @@
   <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
   <!-- Main CSS File -->
   <link href="{% static 'assets/stylesheets/styles.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/stylesheets/custom.css' %}" rel="stylesheet">
+
 
 
 </head>
@@ -48,16 +50,8 @@
           <li><a href="portfolio.html" class="">Portfolio</a></li>
           <li><a href="testimonials.html" class="">Testimonials</a></li>
           <li><a href="team.html" class="">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="packages.html">Pricing</a></li>
-              <li><a href="faqs.html">FAQs</a></li>
-              <li><a href="privacy-policy.html">Terms &amp; Conditions</a></li>
-              <li><a href="privacy-policy.html">Privacy Policy</a></li>
-              <li><a href="blogs.html">Blogs</a></li>
-              <li><a href="blog-details.html">Blog Detail Page</a></li>
-            </ul>
+          <li><a href="#">Menu</a>
+           
           </li>
           <li><a href="blogs.html">News</a></li>
         </ul>
@@ -78,11 +72,13 @@
     <div class="container position-relative">
       <div class="row gy-5 aos-init aos-animate">
         <div class="col-lg-7 offset-lg-5 dark-bg order-lg-1 d-flex flex-column justify-content-start text-left caption">
-          <h2 data-aos="fade-up">Delivering Superior Services <span>IT Solutions</span><span class="circle" data-aos="fade-right" data-aos-delay="800">.</span></h2>
-          <p data-aos="fade-up" data-aos-delay="400">You can easily change any design to your own. It is also highly customizable SEO friendly template.</p>
+          <h2 data-aos="fade-up">Delivering Superior Services <span>Empowering Businesses with Intelligent AI Automation.</span><span class="circle" data-aos="fade-right" data-aos-delay="800">.</span></h2>
+          <p data-aos="fade-up" data-aos-delay="400">
+            We specialize in delivering smart, scalable IT solutions enhanced by custom AI automation tools. 
+          </p>
           <div class="social" data-aos="fade-up" data-aos-delay="600">
             <a href=""><i class="bi bi-twitter"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href="https://www.facebook.com/lavarosolutions/"><i class="bi bi-facebook"></i></a>
             <a href=""><i class="bi bi-linkedin"></i></a>
             <a href=""><i class="bi bi-instagram"></i></a>
           </div>
@@ -103,15 +99,16 @@
             <div class="container position-relative">
               <div class="section-header">
                 <h2>Services We Offer</h2>
-                <p>Lorem ipsum dolor sit amet</p>
+                <p>Smart. Scalable. Custom. Efficient.</p>
               </div>
               <div class="row gy-4">
       
                 <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="100">
                   <div class="icon-box">
                     <div class="icon"><img src="{% static 'assets/images/icons/service-design.svg' %}" alt="icon"></div>
-                    <h4 class="title"><a href="" class="stretched-link">Application Design</a></h4>
-                    <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h4 class="title"><a href="" class="stretched-link">AI Automations</a></h4>
+                    <p>Revolutionize your workflow with intelligent AI automation tailored to your business needs.
+                      From data processing to predictive analytics, we build custom tools that boost efficiency and reduce manual effort.</p>
                   </div>
                 </div>
                 <!--End Icon Box -->
@@ -119,8 +116,9 @@
                 <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
                   <div class="icon-box">
                     <div class="icon"><img src="{% static  'assets/images/icons/service-hosting.svg' %}" alt="icon"></div>
-                    <h4 class="title"><a href="" class="stretched-link">Web Hosting</a></h4>
-                    <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h4 class="title"><a href="" class="stretched-link">Application Design</a></h4>
+                    <p>
+                      We design and develop custom applications from the ground up—combining sleek, intuitive interfaces with robust, scalable architecture to deliver high-performance solutions tailored to your business goals.</p>
                   </div>
                 </div>
                 <!--End Icon Box -->
@@ -129,7 +127,8 @@
                   <div class="icon-box">
                     <div class="icon"><img src="{% static 'assets/images/icons/service-social.svg' %}" alt="icon"></div>
                     <h4 class="title"><a href="" class="stretched-link">Social Media</a></h4>
-                    <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>  
+                      We help businesses build a strong digital presence through targeted social media strategies. From content creation to analytics and engagement, we manage your channels to grow your brand, connect with your audience, and drive real results.</p>
                   </div>
                 </div>
                 <!--End Icon Box -->
@@ -138,7 +137,8 @@
                   <div class="icon-box">
                     <div class="icon"><img src="{% static 'assets/images/icons/service-seo.svg' %}" alt="icon"></div>
                     <h4 class="title"><a href="" class="stretched-link">SEO Optimization</a></h4>
-                    <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>
+                      Boost your online visibility with our expert SEO services. We optimize your website’s structure, content, and performance to rank higher on search engines—bringing in more traffic, better leads, and measurable growth.</p>
                   </div>
                 </div>
                 <!--End Icon Box -->
@@ -147,8 +147,9 @@
                 <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
                   <div class="icon-box">
                     <div class="icon"><img src="{% static 'assets/images/icons/service-cloud.svg' %}" alt="icon"></div>
-                    <h4 class="title"><a href="" class="stretched-link">Cloud Server</a></h4>
-                    <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h4 class="title"><a href="" class="stretched-link">Cloud Hosting</a></h4>
+                    <p>  
+                      Reliable, secure, and scalable cloud hosting tailored to your business needs. We provide high-performance server solutions with 24/7 support, ensuring your applications and data are always accessible, fast, and protected.</p>
                   </div>
                 </div>
                 <!--End Icon Box -->
@@ -157,8 +158,8 @@
                 <div class="col-xl-4 col-md-4" data-aos="fade-up" data-aos-delay="500">
                   <div class="icon-box">
                     <div class="icon"><img src="{% static 'assets/images/icons/service-secure.svg' %}" alt="icon"></div>
-                    <h4 class="title"><a href="" class="stretched-link">Data Secuity</a></h4>
-                    <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h4 class="title"><a href="" class="stretched-link">IT Solutions</a></h4>
+                    <p>We deliver comprehensive IT solutions and robust hardware, empowering your business with seamless technology.</p>
                   </div>
                 </div>
                 <!--End Icon Box -->
@@ -168,13 +169,33 @@
           </div>
         </div>
         <!-- End Service Section -->
+  <!--  Clients Section  -->
+  <div id="clients" class="clients section">
+    <div class="container" data-aos="zoom-out">
+
+      <div class="clients-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide" ><img src="{% static 'assets/images/clients/client-1.png' %}"  class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="{% static 'assets/images/clients/client-2.png' %}"  class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="{% static 'assets/images/clients/client-3.png' %}"  class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="{% static 'assets/images/clients/client-4.png' %}"  class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="{% static 'assets/images/clients/client-5.png' %}"  class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="{% static 'assets/images/clients/client-6.png' %}"  class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="{% static 'assets/images/clients/client-7.png' %}"  class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="{% static 'assets/images/clients/client-8.png' %}"  class="img-fluid" alt=""></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- End Clients Section -->
 
         <!-- Featured -->
         <section>
           <div class="container" id="featured">
               <div class="section-header" data-aos="fade-up" data-aos-delay="100">
                 <h2>Why Choose Us</h2>
-                <p>Lorem ipsum dolor sit amet</p>
+                <p>Deliver smart, reliable IT and AI automation solutions tailored to your business needs.</p>
               </div>
           <div class="row">
             <!-- start  left -->
@@ -267,13 +288,13 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Our Portfolio</h2>
-          <p>Lorem ipsum dolor sit amet</p>
+          <p>A showcase of innovative IT solutions and custom AI automation tools we've delivered across various industries.</p>
         </div>
         <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
           <div>
             <ul class="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App Design</li>
+              <li data-filter=".filter-app">AI Automation</li>
               <li data-filter=".filter-product">App Development</li>
               <li data-filter=".filter-branding">Branding</li>
               <li data-filter=".filter-books">It Solutions</li>
@@ -284,12 +305,14 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
+                AI Tools for Executive and Personal Assistants
                 <a href="{% static 'assets/images/portfolio/product-1.jpg' %}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'assets/images/portfolio/product-1.jpg' %}" class="img-fluid" alt=""></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-product">
               <div class="portfolio-wrap">
+                AI Tools for CX Experinces
                 <a href="{% static 'assets/images/portfolio/product-2.jpg' %}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'assets/images/portfolio/product-2.jpg' %}" class="img-fluid" alt=""></a>
               </div>
             </div><!-- End Portfolio Item -->
@@ -325,93 +348,7 @@
     </section>
     <!-- End Portfolio Section -->
 
-    <!-- Start Pricing Section -->
-    <div class="pricing section">
-      <div class="container-fluid">
-        <div class="container">
-          <div class="section-header">
-            <h2>Pricing Plans</h2>
-            <p>Lorem ipsum dolor sit amet</p>
-          </div>
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="card text-center">
-                <div class="title">
-                  <h2>Basic</h2>
-                </div>
-                <div class="price">
-                  <h4><sup>$</sup>25</h4>
-                </div>
-                <div class="option">
-                  <ul>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> Unlimited GB Space</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> 30 Domain Names</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> Free SSL</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> Daily Backup</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> Free Templates</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> Free Email</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> 10 Databases</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> Unlimited Email Address</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> Live Support</li>
-                  </ul>
-                </div>
-                <a href="#">Order Now</a>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="card text-center">
-                <div class="title">
-                  <h2>Standard</h2>
-                </div>
-                <div class="price">
-                  <h4><sup>$</sup>50</h4>
-                </div>
-                <div class="option">
-                  <ul>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> Unlimited GB Space</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> 30 Domain Names</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> Free SSL</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> Daily Backup</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> Free Templates</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> Free Email</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> 10 Databases</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> Unlimited Email Address</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> Live Support</li>
-                  </ul>
-                </div>
-                <a href="#">Order Now</a>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="card text-center">
-                <div class="title">
-                  <h2>Premium</h2>
-                </div>
-                <div class="price">
-                  <h4><sup>$</sup>100</h4>
-                </div>
-                <div class="option">
-                  <ul>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> Unlimited GB Space</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> 30 Domain Names</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> Free SSL</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> Daily Backup</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> Free Templates</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> Free Email</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> 10 Databases</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> Unlimited Email Address</li>
-                    <li><i class="bi bi-check-circle" aria-hidden="true"></i> Live Support</li>
-                  </ul>
-                </div>
-                <a href="#">Order Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Pricing Section -->
-
+  
 
     <!--  Testimonials Section  -->
     <section id="testimonials" class="testimonials">
@@ -561,27 +498,7 @@
     </div>
     <!--  End Counter Section  -->
 
-    <!--  Clients Section  -->
-    <div id="clients" class="clients section">
-      <div class="container" data-aos="zoom-out">
   
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="{% static 'assets/images/clients/client-1.png' %}"  class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{% static 'assets/images/clients/client-2.png' %}"  class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{% static 'assets/images/clients/client-3.png' %}"  class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{% static 'assets/images/clients/client-4.png' %}"  class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{% static 'assets/images/clients/client-5.png' %}"  class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{% static 'assets/images/clients/client-6.png' %}"  class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{% static 'assets/images/clients/client-7.png' %}"  class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{% static 'assets/images/clients/client-8.png' %}"  class="img-fluid" alt=""></div>
-          </div>
-        </div>
-  
-      </div>
-    </div>
-    <!-- End Clients Section -->
-
 
     <!--  Our Team Section  -->
     <section id="team" class="team sections-bg">
@@ -601,7 +518,7 @@
               <span>Application Manager</span>
               <div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href="https://www.facebook.com/lavarosolutions/"><i class="bi bi-facebook"></i></a>
                 <a href=""><i class="bi bi-linkedin"></i></a>
                 <a href=""><i class="bi bi-instagram"></i></a>
               </div>
@@ -615,7 +532,7 @@
               <span>Social Media</span>
               <div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href="https://www.facebook.com/lavarosolutions/"><i class="bi bi-facebook"></i></a>
                 <a href=""><i class="bi bi-linkedin"></i></a>
                 <a href=""><i class="bi bi-instagram"></i></a>
               </div>
@@ -629,7 +546,7 @@
               <span>Content Writer</span>
               <div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href="https://www.facebook.com/lavarosolutions/"><i class="bi bi-facebook"></i></a>
                 <a href=""><i class="bi bi-linkedin"></i></a>
                 <a href=""><i class="bi bi-instagram"></i></a>
               </div>
@@ -643,7 +560,7 @@
               <span>Business Manager</span>
               <div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href="https://www.facebook.com/lavarosolutions/"><i class="bi bi-facebook"></i></a>
                 <a href=""><i class="bi bi-linkedin"></i></a>
                 <a href=""><i class="bi bi-instagram"></i></a>
               </div>
@@ -657,107 +574,7 @@
     <!-- End Our Team Section -->
 
 
-    <!--  Frequently Asked Questions Section  -->
-    <section id="faq" class="faq">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>FAQ's</h2>
-          <p>Lorem ipsum dolor sit amet</p>
-        </div>
-        <div class="row gy-4">
-          <div class="col-lg-12">
-            <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq-content-1">
-                    <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
-                    What is web domain and hosting?
-                  </button>
-                </h3>
-                <div id="faq-content-1" class="accordion-collapse collapse show" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                    magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-                    quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
-                    labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-                    exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
-                    autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
-                    vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                  </div>
-                </div>
-              </div><!-- # Faq item-->
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq-content-2">
-                    <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
-                    Which server is best for websites linux or windows?
-                  </button>
-                </h3>
-                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                    magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-                    quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
-                    labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-                    exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
-                    autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
-                    vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                  </div>
-                </div>
-              </div><!-- # Faq item-->
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq-content-3">
-                    <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
-                    Google cloud or Amazon server which one is best and fast?
-                  </button>
-                </h3>
-                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                    magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-                    quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
-                    labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-                    exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
-                    autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
-                    vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                  </div>
-                </div>
-              </div><!-- # Faq item-->
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq-content-4">
-                    <span class="num"><i class="bi bi-arrow-right-circle-fill"></i></span>
-                    Why Organic SEO is important for all businesses?
-                  </button>
-                </h3>
-                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                    magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-                    quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
-                    labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-                    exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
-                    autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
-                    vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                  </div>
-                </div>
-              </div><!-- # Faq item-->
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- End Frequently Asked Questions Section -->
-
+    
 
     <!--  Call To Action Section  -->
     <section id="call-to-action" class="call-to-action">
@@ -851,7 +668,7 @@
     <div id="contact" class="contact-section section">
       <div class="section-header">
         <h2>Contact Us</h2>
-        <p>Lorem ipsum dolor sit amet</p>
+        <p>Get in touch to discover how our IT and AI automation solutions can transform your business.</p>
       </div>
       <div class="container">
         <div class="row">
@@ -862,29 +679,35 @@
                   <div class="single-contact-info-box">
                     <div class="contact-info">
                       <h6>Address:</h6>
-                      <p>11 West Town</p>
-                      <p>PBo 12345, United States</p>
+                      <p>6 Gamal Saleem St,From Mosadq St,</p>
+                        </p>
+                      <p> El Dokki
+                        Giza,Egypt</p>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="single-contact-info-box">
                     <div class="contact-info">
-                      <h6>Phone:</h6>
-                      <p>+1 1234 56 789</p>
-                      <p>+1 1234 56 780</p>
+                      <h6>Follow Us:</h6>
+                      <p>
+                        <a href="https://facebook.com/yourpage" target="_blank" style="color: red;">
+                          <i class="bi bi-facebook"></i> Facebook
+                        </a><br>
+                        <a href="https://twitter.com/yourhandle" target="_blank" style="color: red;">
+                          <i class="bi bi-twitter"></i> Twitter
+                        </a><br>
+                        <a href="https://instagram.com/yourprofile" target="_blank" style="color: red;">
+                          <i class="bi bi-instagram"></i> Instagram
+                        </a><br>
+                        <a href="https://linkedin.com/company/yourcompany" target="_blank" style="color: red;">
+                          <i class="bi bi-linkedin"></i> LinkedIn
+                        </a>
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-12">
-                  <div class="single-contact-info-box">
-                    <div class="contact-info">
-                      <h6>Email:</h6>
-                      <p>info@example.com</p>
-                      <p>email@example.com</p>
-                    </div>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -957,13 +780,13 @@
                             </a>
                         </div>
                         <div class="footer-text">
-                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                            elit,Lorem ipsum dolor sit amet.</p>
+                            <p>Delivering Superior Services Empowering Businesses with Intelligent AI Automation.
+                              We specialize in delivering smart, scalable IT solutions enhanced by custom AI automation tools.</p>
                         </div>
                         <div class="footer-social-icon">
                             <span>Follow us</span>
                             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.facebook.com/lavarosolutions/" class="facebook"><i class="bi bi-facebook"></i></a>
                             <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
                             <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
                         </div>
@@ -997,8 +820,7 @@
                             <li><a href="porfolio.html">Portfolio</a></li>
                             <li><a href="faq.html">FAQs</a></li>
                             <li><a href="team.html">Team</a></li>
-                            <li><a href="blogs.html">Blogs</a></li>
-                            <li><a href="blogs-details.html">Blog Details</a></li>
+                           
                             <li><a href="coming-soon.html">Coming Soon</a></li>
                             <li><a href="privacy-policy.html">Terms & Conditions</a></li>
                             <li><a href="privacy-policy.html">Privacy Policy</a></li>

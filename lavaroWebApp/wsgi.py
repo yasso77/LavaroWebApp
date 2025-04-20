@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'WebSite.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'lavaroWebApp.settings')
 
 application = get_wsgi_application()

@@ -999,7 +999,7 @@ section {background: var(--light-color);}
 # Clients Section
 --------------------------------------------------------------*/
 .clients {
-  padding: 90px 0;
+  padding: 0px 0;
 }
 
 .clients .swiper {
