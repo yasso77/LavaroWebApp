@@ -1,68 +1,11 @@
+{% extends 'master.html' %}
 {%load static %}
-<!DOCTYPE html>
-<html lang="zxx">
-  <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>LAVARO - IT Solutions & Business Services</title>
-  <meta content="" name="Technoit - IT Solutions & Business Services Multipurpose Responsive Website Template">
-  <meta name="description" content="Technoit - IT Solutions & Business Services Multipurpose Responsive Website Template">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta content="" name="ZRTHEMES">
-
-  <!-- Favicons -->
-  <link href="{% static 'assets/images/favicon.png' %}"  rel="icon">
-  <link href="{% static 'assets/images/apple-touch-icon.png' %}"  rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&amp;family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&amp;display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&amp;display=swap" rel="stylesheet">
-  <!-- Vendor CSS Files -->
-  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/stylesheets/font-awesome.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
-  <!-- Main CSS File -->
-  <link href="{% static 'assets/stylesheets/styles.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/stylesheets/custom.css' %}" rel="stylesheet">
 
 
+{% block content %}
+ 
 
-</head>
 
-<body>
-
-  <header id="header" class="header d-flex align-items-center sticked stikcy-menu">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="{% static 'assets/images/logo.png' %}" alt="logo">
-      </a>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index.html" class="">Home</a></li>
-          <li><a href="services.html" class="">Services</a></li>
-          <li><a href="portfolio.html" class="">Portfolio</a></li>
-          <li><a href="testimonials.html" class="">Testimonials</a></li>
-          <li><a href="team.html" class="">Team</a></li>
-          <li><a href="#">Menu</a>
-           
-          </li>
-          <li><a href="blogs.html">News</a></li>
-        </ul>
-      </nav><!-- .navbar -->
-      <a href="contact.html" class="btn-get-started hide-on-mobile">Get Quotes</a>
-      <button id="darkmode-button"><i class="bi bi-moon-fill"></i></button>
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-    </div>
-  </header>
-  <!-- End Header -->
 
   <!--  Hero Section  -->
   <section id="hero" class="hero sticked-header-offset">
@@ -83,7 +26,7 @@
             <a href=""><i class="bi bi-instagram"></i></a>
           </div>
           <div class="d-flex justify-content-start">
-            <a href="#contact" class="btn-get-started mr-20" data-aos="fade-up" data-aos-delay="800">Get Quotes</a>
+            <a href="{% url 'contact' %}" class="btn-get-started mr-20" data-aos="fade-up" data-aos-delay="800">Get Quotes</a>
             <a href="#services" class="btn-get-started" data-aos="fade-up" data-aos-delay="1000">Get Started</a>
           </div>
         </div>
@@ -680,7 +623,7 @@
                     <div class="contact-info">
                       <h6>Address:</h6>
                       <p>6 Gamal Saleem St,From Mosadq St,</p>
-                        </p>
+                        
                       <p> El Dokki
                         Giza,Egypt</p>
                     </div>
@@ -767,129 +710,4 @@
 
   </main><!-- End #main -->
 
-  <!--  Footer  -->
-  <footer id="footer" class="footer-section">
-    <div class="container">
-        <div class="footer-content pt-5 pb-5">
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 mb-50">
-                    <div class="footer-widget">
-                        <div class="footer-logo">
-                            <a href="index.html" class="logo d-flex align-items-center">
-                              <img src="{% static 'assets/images/logo.png' %}" alt="logo">
-                            </a>
-                        </div>
-                        <div class="footer-text">
-                            <p>Delivering Superior Services Empowering Businesses with Intelligent AI Automation.
-                              We specialize in delivering smart, scalable IT solutions enhanced by custom AI automation tools.</p>
-                        </div>
-                        <div class="footer-social-icon">
-                            <span>Follow us</span>
-                            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                            <a href="https://www.facebook.com/lavarosolutions/" class="facebook"><i class="bi bi-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
-                      <div class="service-widget footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Services</h3>
-                        </div>
-                          <ul class="list">
-                              <li><a href="services.html">Web Design</a></li>
-                              <li><a href="services.html">App Developemnt</a></li>
-                              <li><a href="services.html">Cloud Services</a></li>
-                              <li><a href="services.html">Domain adn Hosting</a></li>
-                              <li><a href="services.html">Seo Optimization</a></li>
-                              <li><a href="services.html">Social Media</a></li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
-                      <div class="service-widget footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Information</h3>
-                        </div>
-                          <ul class="list">
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="packages.html">Pricing</a></li>
-                            <li><a href="team.html">Team</a></li>
-                            <li><a href="porfolio.html">Portfolio</a></li>
-                            <li><a href="faq.html">FAQs</a></li>
-                            <li><a href="team.html">Team</a></li>
-                           
-                            <li><a href="coming-soon.html">Coming Soon</a></li>
-                            <li><a href="privacy-policy.html">Terms & Conditions</a></li>
-                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                          </ul>
-                      </div>
-                  </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                    <div class="contact-widget footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Contacts</h3>
-                        </div>
-                          <div class="footer-text">
-                              <p><i class="bi bi-geo-alt-fill mr-15"></i> 101 West Town , PBO 12345, United States</p>
-                              <p><i class="bi bi-telephone-inbound-fill mr-15"></i> +1 1234 56 789</p>
-                              <p><i class="bi bi-envelope-fill mr-15"></i> contact@example.com</p>
-                          </div>
-                    </div>
-                    <div class="footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Newsletter</h3>
-                        </div>
-                        <div class="footer-text mb-25">
-                            <p>Don't miss to subscribe to our new feeds, kindly fill the form below.</p>
-                        </div>
-                        <div class="subscribe-form">
-                            <form action="#">
-                                <input type="text" placeholder="Email Address">
-                                <button><i class="bi bi-telegram"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 text-left text-lg-left">
-                    <div class="copyright-text">
-                        <p>Technoit © 2023 - Designed by <a href="https://www.templatemonster.com/authors/zrthemes/">Zr Themes</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  </footer>
-  <!-- End Footer -->
-
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center active">
-    <i class="bi bi-arrow-up-short"></i>
-  </a>
-
-  <div id="preloader"></div>
-
-
-  <!-- Vendor JS Files -->
-  
-  <script src="{% static 'assets/javascripts/jquery.min.js' %}" ></script>
-  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}" ></script>
-  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}" ></script>
-  <script src="{% static 'assets/vendor/aos/aos.js' %}" ></script>
-  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}" ></script>
-  <script src="{% static 'assets/javascripts/plugins.js' %}" ></script>
-  <script src="{% static 'assets/javascripts/purecounter_vanilla.js' %}" ></script>
-  <script src="{% static 'assets/javascripts/validator.min.js' %}" ></script>
-  <script src="{% static 'assets/javascripts/contactform.js' %}" ></script>
-  <script src="{% static 'assets/javascripts/particles.min.js' %}" ></script>
-  <script src="{% static 'assets/javascripts/script.js' %}" ></script>
-
-  <!-- Template Main JS File -->
-  <script src="{% static 'assets/javascripts/main.js' %}" ></script>
-
-
-
-</body></html>
+{% endblock %}
